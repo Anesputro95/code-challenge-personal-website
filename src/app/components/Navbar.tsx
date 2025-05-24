@@ -1,34 +1,39 @@
 import Link from "next/link"
-import Button from "./Button"
+import { Button } from "@/components/ui/button"
+
 
 
 export default function Navbar() {
-    return <div id="navbar" className=" bg-gray-800 shadow-lg shadow-fuchsia-900/50">
-        <section className="flex py-4 px-4 mx-14 justify-between">
+    return <div id="navbar" className="bg-sky-950 shadow-lg shadow-cyan-500/50">
+        <section className=" flex py-4 px-4 mx-14 justify-between">
 
             {/* logo */}
             <div className="">
-                <Link href="/"><img src="/assets/logo.png" alt="" className="h-7 w-auto"/></Link>
+                <Link href="/"><img src="/assets/logo.png" alt="" className="h-7 w-auto" /></Link>
             </div>
 
             {/* list */}
             <div className="flex items-center justify-between">
                 <ul className="flex space-x-16 text-m font-extralight text-white pr-12">
-                    <li className="text-white font-extralight">
-                        <Link href="/">Home</Link>
+                    <li className="text-white font-extralight hover:underline underline-offset-4">
+                        <Link href="/" className="">Home</Link>
                     </li>
-                    <li className="text-white font-extralight">
-                        <Link href="/">Profile</Link>
+                    <li className="text-white font-extralight hover:underline underline-offset-4">
+                        <Link href="/profile">Profile</Link>
                     </li>
-                    <li>
+                    <li className="text-white font-extralight hover:underline underline-offset-4">
                         <Link href="/about">About Me</Link>
                     </li>
-                    <li className="text-white font-extralight">
-                        <Link href="/">My Works</Link>
+                    <li className="text-white font-extralight hover:underline underline-offset-4">
+                        <Link href="/mywork">My Works</Link>
                     </li>
                 </ul>
                 {/* button */}
-                <Button/>
+                <Link href="/contact">
+                    <Button className="rounded-full cursor-pointer font-extralight hover:shadow-[0_0_10px_white] transition-shadow duration-300">
+                        Contact
+                    </Button>
+                </Link>
             </div>
         </section>
     </div>
