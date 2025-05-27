@@ -52,7 +52,7 @@ export default function Footer() {
                         <h1 className='hover:text-sky-500 w-19'>ABOUT</h1>
                     </a>
                     <a href="/mywork">
-                        <h1 className='hover:text-sky-500 w-26'>MY WORKS</h1>
+                        <h1 className='hover:text-sky-500 w-26'>PORTOFOLIO</h1>
                     </a>
                 </div>
 

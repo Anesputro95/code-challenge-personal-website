@@ -4,7 +4,7 @@ export default function About() {
         <div
             className=" max-w-full max-h-fit"
             style={{
-                backgroundImage: "url('/assets/bg-profile-2.jpg')",
+                backgroundImage: "url('/assets/bg-profile.jpg')",
                 backgroundSize: "cover",
                 backgroundPosition: "center"
             }}
@@ -12,10 +12,10 @@ export default function About() {
 
             <div className="h-600 max-w-full mx-20 flex flex-col">
 
-                <div className=" mx-40 m-20  gap-6">
+                <div className=" mx-40 m-20  gap-8">
                     <h1 className="text-5xl text-sky-800 font-black drop-shadow-sm drop-shadow-white">ABOUT ME</h1>
                     <div>
-                        <p className="ml-22 font-extralight text-gray-400 text-left">
+                        <p className="ml-22 font-extralight text-gray-400 text-left relative top-6 ">
                             I’m a <span className="font-bold text-white">Full-Stack Developer</span> with a creative background and over 5 years of experience in the digital media industry. My interest in <span className="font-bold text-white">web development</span> began with a passion for visual design and evolved into a deep focus on technical problem solving. I develop using <span className="font-bold text-white">modern TypeScript-based stacks such as React, Node.js, and Express,</span> and work confidently with <span className="font-bold text-white">REST APIs, MongoDB, and Git</span>. I enjoy contributing to both <span className="font-bold text-white">frontend and backend development</span>, and I’m committed to writing <span className="font-bold text-white">clean, type-safe code</span> while continuously improving my understanding of <span className="font-bold text-white">system design, performance optimization, and developer best practices.</span>
                             <br /><br />
                             <span>
@@ -29,7 +29,7 @@ export default function About() {
                     {/* Judul */}
                     <div>
                         <div className="text-center text-sky-800 font-black drop-shadow-sm drop-shadow-white flex flex-col gap-2">
-                            <h1 className="text-7xl relative bottom-12">
+                            <h1 className="text-7xl relative bottom-6">
                                 MY SKILLS
                             </h1>
                             <h2 className="text-5xl ">
@@ -112,8 +112,6 @@ export default function About() {
                     </div>
 
                 </div>
-
-
             </div>
         </div>
 

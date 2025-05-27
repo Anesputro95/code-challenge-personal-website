@@ -7,6 +7,7 @@ import Link from "next/link";
 export default function Home() {
   return (
     <div className="relative h-screen w-full overflow-hidden flex items-center justify-center backdrop-blur-lg bg-black/60">
+
       {/* Video Background */}
       <video
         autoPlay
@@ -20,16 +21,20 @@ export default function Home() {
       </video>
       <div
         className="flex flex-col mx-auto relative bottom-4"
-        >
+      >
         <div className="mx-18 h-200 justify-center content-center">
-          <h2 className="py-6 mx-130 text-3xl text-center align-middle text-gray-400">WELCOME TO</h2>
-          <h1 className="relative bottom-10 py-2 mx-60 text-7xl text-center align-middle text-gray-400">MY PERSONAL WEBSITE</h1>
+          <h2 className="py-6 mx-130 text-3xl text-center align-middle text-gray-400 font-bold relative bottom-4">WELCOME TO</h2>
+          <h1
+            className="relative bottom-10 py-2 mx-60 text-7xl text-center align-middle text-sky-950 font-extrabold drop-shadow-lg drop-shadow-white"
+          >
+            MY PERSONAL WEBSITE
+          </h1>
         </div>
-
+        
         <div className="mx-auto relative bottom-85">
           <Link href="/mywork">
             <Button className="cursor-pointer rounded-3xl h-12 w-42 bg-sky-800">
-              Explore My Works
+              Explore My Portofolio
             </Button>
           </Link>
         </div>
